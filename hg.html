@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animasyon</title>
+    <style>
+        div {
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            animation-name: neos;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-timing-function: ease;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes neos {
+            from {
+                background-color: green;
+            }
+            to {
+                background-color: red;
+            }
+        } 
+        div {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: neos;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes neos {
+            0% {
+                background-color: blueviolet;
+                left: 0;
+                top: 0;
+            }
+            25% {
+                background-color: blue;
+                left: 200px;
+                top: 0;
+            }
+            50% {
+                background-color: yellow;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: green;
+                left: 0;
+                top: 200px;
+            }
+            100% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+        } 
+        div {
+            width: 100%;
+            height: 150px;
+            background-image: linear-gradient(to right, blue, red, yellow, green, lightblue);
+            background-size: 200%;
+           
+        }
+        div:hover {
+             animation: mervan 4s infinite ;
+        }
+        @keyframes mervan {
+            from {
+                background-position: 0;
+                width: 50%;
+            }
+            to {
+                background-position: 100%;
+                width: 100%;
+            }
+        } 
+        
+      ul {
+            background-image: linear-gradient(to right, rgba(61, 113, 118, 0.381), yellow, #EB9500);
+            background-size: 500%;
+            animation: menu 5s infinite;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 20px;
+
+        }
+        @keyframes menu {
+            0% {
+                
+
+               
+                background-position: 0;
+                color: white;
+            }
+            50% {
+                
+                background-position: 100%;
+                color: black;
+            }
+        } 
+        div {
+            background-image: repeating-linear-gradient(red, blue);
+            width: 300px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Yorum -->
+    <div></div>
+    <!-- <nav>
+        <ul>
+            <li>Menü</li>
+            <li>Menü</li>
+            <li>Menü</li>
+            <li>Menü</li>
+        </ul>
+    </nav> -->
+</body>
+</html>
